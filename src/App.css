@@ -31,3 +31,69 @@
     transform: rotate(360deg);
   }
 }
+
+.adventure-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.adventure-list__item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  margin: 0 20px 20px;
+}
+
+.adventure-list__item-container--disabled {
+  opacity: 0.4;
+}
+
+.adventure-list__image {
+  width: 150px;
+  height: 150px;
+}
+
+.adventure {
+}
+
+.adventure__container {
+}
+
+.adventure__title {
+}
+
+.adventure__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.adventure__story-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.adventure__descision-text {
+}
+
+.adventure__image {
+  width: 250px;
+  height: 250px;
+}
+
+.adventure__option {
+  width: 100px;
+}
+
+.adventure__sources {
+  display: flex;
+  flex-direction: column;
+}
