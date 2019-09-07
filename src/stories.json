@@ -17,6 +17,7 @@
           "next": 2,
           "review": {
             "label": "Because you chose 'That', you saved the world!",
+            "image": "logo.svg",
             "infoUrl": "http://www.google.com"
           }
         }
@@ -34,6 +35,7 @@
           "next": null,
           "review": {
             "label": "Because you chose 'B', you destroyed the world!",
+            "image": "logo.svg",
             "infoUrl": "http://www.google.com"
           }
         }
@@ -47,6 +49,7 @@
           "next": null,
           "review": {
             "label": "Because you 'Picked this', you get one chocolate bar!",
+            "image": "logo.svg",
             "infoUrl": "http://www.google.com"
           }
         },
@@ -55,6 +58,7 @@
           "next": null,
           "review": {
             "label": "Because you 'Picked that', you get TWO chocolate bars!",
+            "image": "logo.svg",
             "infoUrl": "http://www.google.com"
           }
         }

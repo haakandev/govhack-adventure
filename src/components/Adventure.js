@@ -76,7 +76,16 @@ const Adventure = ({ adventure, returnHome }) => {
             </p>
           )}
           {results.map(result => (
-            <p key={result.label}>{result.label}</p>
+            <div className="adventure__result-item">
+              {!!result.image && (
+                <img
+                  src={`./assets/${result.image}`}
+                  alt=""
+                  className="adventure__result-image"
+                />
+              )}
+              <p key={result.label}>{result.label}</p>
+            </div>
           ))}
           {results.map(result => (
             <div key={result.label + result.infoUrl}>
