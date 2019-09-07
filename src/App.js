@@ -1,27 +1,27 @@
 import React, { useState } from "react";
 import "./App.css";
 import Adventure from "./components/Adventure";
-import adventures from "./adventures";
+import stories from "./stories";
 
 const isUnlocked = (adventure, adventures, visited) => {
-  if (adventure.id === 1) {
+  if (adventure.id === 0) {
     return true;
   }
 
-  const currentIndex = adventures.reduce(
-    (finalIndex, adv, index) => (adventure.id === adv.id ? index : finalIndex),
+  const curAdvIndex = adventures.reduce(
+    (foundIndex, adv, index) => (adventure.id === adv.id ? index : foundIndex),
     -1
   );
 
-  if (currentIndex > 0) {
-    return (
-      visited.find(
-        visitedDecision =>
-          visitedDecision.id[0] === adventures[currentIndex - 1].id
-      ) !== undefined
-    );
+  if (curAdvIndex === 0) {
+    return true;
   }
-  return false;
+
+  return (
+    visited.find(
+      visAdv => visAdv.id === adventures[curAdvIndex - 1].story[0].id
+    ) !== undefined
+  );
 };
 
 const App = () => {
@@ -39,14 +39,11 @@ const App = () => {
               setVisited(v => [...v, ...newlyVisited]);
               setAdventure(null);
             }}
+            previouslyVisited={visited}
           />
         ) : (
-          adventures.map(adventure => {
-            const isAdventureUnlocked = isUnlocked(
-              adventure,
-              adventures,
-              visited
-            );
+          stories.map(adventure => {
+            const isAdventureUnlocked = isUnlocked(adventure, stories, visited);
             return (
               <div
                 className={`adventure-list__item-container ${
@@ -60,7 +57,7 @@ const App = () => {
                 key={adventure.id}
               >
                 <img
-                  src={adventure.image}
+                  src={`./assets/${adventure.image}`}
                   className="adventure-list__image"
                   alt=""
                 />

@@ -1,0 +1,188 @@
+[
+  {
+    "id": 0,
+    "name": "Adventure 1",
+    "image": "logo.svg",
+    "story": [
+      {
+        "id": 0,
+        "question": "Bla bla bla, bla bla. Decide!",
+        "image": "logo.svg",
+        "left": {
+          "label": "This",
+          "next": 1
+        },
+        "right": {
+          "label": "That",
+          "next": 2,
+          "review": {
+            "label": "Because you chose 'That', you saved the world!",
+            "infoUrl": "http://www.google.com"
+          }
+        }
+      },
+      {
+        "id": 1,
+        "question": "New decision! Bla bla bla, bla bla",
+        "image": "logo.svg",
+        "left": {
+          "label": "Option A",
+          "next": null
+        },
+        "right": {
+          "label": "Option B",
+          "next": null,
+          "review": {
+            "label": "Because you chose 'B', you destroyed the world!",
+            "infoUrl": "http://www.google.com"
+          }
+        }
+      },
+      {
+        "id": 2,
+        "question": "New decision! Bla bla bla, bla bla",
+        "image": "logo.svg",
+        "left": {
+          "label": "Pick this!",
+          "next": null,
+          "review": {
+            "label": "Because you 'Picked this', you get one chocolate bar!",
+            "infoUrl": "http://www.google.com"
+          }
+        },
+        "right": {
+          "label": "Pick that!",
+          "next": null,
+          "review": {
+            "label": "Because you 'Picked that', you get TWO chocolate bars!",
+            "infoUrl": "http://www.google.com"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Adventure 2",
+    "image": "logo.svg",
+    "story": [
+      {
+        "id": 12,
+        "question": "Bla bla bla, bla bla. Decide!",
+        "image": "logo.svg",
+        "left": {
+          "label": "This",
+          "next": 13
+        },
+        "right": {
+          "label": "That",
+          "next": 14,
+          "review": {
+            "label": "Because you chose 'That', you saved the world!",
+            "infoUrl": "http://www.google.com"
+          }
+        }
+      },
+      {
+        "id": 13,
+        "question": "New decision! Bla bla bla, bla bla",
+        "image": "logo.svg",
+        "left": {
+          "label": "Option A",
+          "next": null
+        },
+        "right": {
+          "label": "Option B",
+          "next": null,
+          "review": {
+            "label": "Because you chose 'B', you destroyed the world!",
+            "infoUrl": "http://www.google.com"
+          }
+        }
+      },
+      {
+        "id": 14,
+        "question": "New decision! Bla bla bla, bla bla",
+        "image": "logo.svg",
+        "left": {
+          "label": "Pick this!",
+          "next": null,
+          "review": {
+            "label": "Because you 'Picked this', you get one chocolate bar!",
+            "infoUrl": "http://www.google.com"
+          }
+        },
+        "right": {
+          "label": "Pick that!",
+          "next": null,
+          "review": {
+            "label": "Because you 'Picked that', you get TWO chocolate bars!",
+            "infoUrl": "http://www.google.com"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Adventure 3",
+    "image": "logo.svg",
+    "story": [
+      {
+        "id": 34,
+        "question": "Bla bla bla, bla bla. Decide!",
+        "image": "logo.svg",
+        "left": {
+          "label": "This",
+          "next": 35
+        },
+        "right": {
+          "label": "That",
+          "next": 36,
+          "review": {
+            "label": "Because you chose 'That', you saved the world!",
+            "infoUrl": "http://www.google.com"
+          }
+        }
+      },
+      {
+        "id": 35,
+        "question": "New decision! Bla bla bla, bla bla",
+        "image": "logo.svg",
+        "left": {
+          "label": "Option A",
+          "next": null
+        },
+        "right": {
+          "label": "Option B",
+          "next": null,
+          "review": {
+            "label": "Because you chose 'B', you destroyed the world!",
+            "infoUrl": "http://www.google.com"
+          }
+        }
+      },
+      {
+        "id": 36,
+        "question": "New decision! Bla bla bla, bla bla",
+        "image": "logo.svg",
+        "left": {
+          "label": "Pick this!",
+          "next": null,
+          "review": {
+            "label": "Because you 'Picked this', you get one chocolate bar!",
+            "infoUrl": "http://www.google.com"
+          }
+        },
+        "right": {
+          "label": "Pick that!",
+          "next": null,
+          "review": {
+            "label": "Because you 'Picked that', you get TWO chocolate bars!",
+            "infoUrl": "http://www.google.com"
+          }
+        }
+      }
+    ]
+  }
+]
