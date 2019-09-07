@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/haakandev/govhack-adventure/static/css/main.a203e41f.chunk.css",
+    "main.js": "/haakandev/govhack-adventure/static/js/main.83ec5410.chunk.js",
+    "main.js.map": "/haakandev/govhack-adventure/static/js/main.83ec5410.chunk.js.map",
+    "runtime~main.js": "/haakandev/govhack-adventure/static/js/runtime~main.b29301cf.js",
+    "runtime~main.js.map": "/haakandev/govhack-adventure/static/js/runtime~main.b29301cf.js.map",
+    "static/js/2.b1bde62e.chunk.js": "/haakandev/govhack-adventure/static/js/2.b1bde62e.chunk.js",
+    "static/js/2.b1bde62e.chunk.js.map": "/haakandev/govhack-adventure/static/js/2.b1bde62e.chunk.js.map",
+    "index.html": "/haakandev/govhack-adventure/index.html",
+    "precache-manifest.a2e1e1e3d13a740491be12b4fb07f3b6.js": "/haakandev/govhack-adventure/precache-manifest.a2e1e1e3d13a740491be12b4fb07f3b6.js",
+    "service-worker.js": "/haakandev/govhack-adventure/service-worker.js",
+    "static/css/main.a203e41f.chunk.css.map": "/haakandev/govhack-adventure/static/css/main.a203e41f.chunk.css.map"
+  }
+}
