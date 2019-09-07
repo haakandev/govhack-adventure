@@ -19,10 +19,33 @@ const Adventure = ({ adventure, returnHome }) => {
 
   return (
     <div className="adventure">
-      <h3 className="adventure__title">{`You're playing ${adventure.name}!`}</h3>
-      <div className="adventure__container">
-        {decision && (
-          <>
+      <h4 className="adventure__title">{adventure.name}</h4>
+      {decision && (
+        <div className="adventure__container">
+          <div className="adventure__story-content">
+            <p className="adventure__decision-text">{decision.text}</p>
+            <img
+              src={`./assets/${decision.image}`}
+              className="adventure__image"
+              alt=""
+            />
+            {decision.sources && (
+              <div className="adventure__sources">
+                {decision.sources.map(source => (
+                  <a
+                    href={source.url}
+                    className="adventure__source-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    key={source.text}
+                  >
+                    {source.text}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+          <div className="adventure__options-container">
             {decision.left && (
               <button
                 type="button"
@@ -32,29 +55,6 @@ const Adventure = ({ adventure, returnHome }) => {
                 {decision.left.label}
               </button>
             )}
-            <div className="adventure__story-content">
-              <p className="adventure__decision-text">{decision.text}</p>
-              <img
-                src={`./assets/${decision.image}`}
-                className="adventure__image"
-                alt=""
-              />
-              {decision.sources && (
-                <div className="adventure__sources">
-                  {decision.sources.map(source => (
-                    <a
-                      href={source.url}
-                      className="adventure__source-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      key={source.text}
-                    >
-                      {source.text}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
             {decision.right && (
               <button
                 type="button"
@@ -64,9 +64,9 @@ const Adventure = ({ adventure, returnHome }) => {
                 {decision.right.label}
               </button>
             )}
-          </>
-        )}
-      </div>
+          </div>
+        </div>
+      )}
       {!decision && (
         <>
           {results.length < 1 && (
