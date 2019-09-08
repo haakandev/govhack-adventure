@@ -19,10 +19,11 @@ const Adventure = ({ adventure, returnHome }) => {
 
   return (
     <div className="adventure">
-      <h4 className="adventure__title">{adventure.name}</h4>
+      <h4 className="adventure__title">{adventure.name}</h4>      
       {decision && (
         <div className="adventure__container">
           <div className="adventure__story-content">
+            <h4 className="story__question">{decision.question}</h4>
             <p className="adventure__decision-text">{decision.text}</p>
             <img
               src={`./assets/${decision.image}`}
