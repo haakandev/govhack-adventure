@@ -61,7 +61,7 @@ const App = () => {
                   className="adventure-list__image"
                   alt=""
                 />
-                <h4>{adventure.name}</h4>
+                <h4>START HERE</h4>
               </div>
             );
           })
