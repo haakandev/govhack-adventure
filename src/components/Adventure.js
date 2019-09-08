@@ -19,7 +19,7 @@ const Adventure = ({ adventure, returnHome }) => {
 
   return (
     <div className="adventure">
-      <h4 className="adventure__title">{adventure.name}</h4>      
+      <h4 className="adventure__title">{adventure.name}</h4>
       {decision && (
         <div className="adventure__container">
           <div className="adventure__story-content">
@@ -47,7 +47,7 @@ const Adventure = ({ adventure, returnHome }) => {
             )}
           </div>
           <div className="adventure__options-container">
-            {decision.left && (
+            {decision.left && decision.left.label && (
               <button
                 type="button"
                 className="adventure__option"
@@ -56,7 +56,7 @@ const Adventure = ({ adventure, returnHome }) => {
                 {decision.left.label}
               </button>
             )}
-            {decision.right && (
+            {decision.right && decision.right.label && (
               <button
                 type="button"
                 className="adventure__option"

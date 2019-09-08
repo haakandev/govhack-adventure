@@ -67,6 +67,20 @@ const App = () => {
           })
         )}
       </div>
+      <p>
+        <strong>NOTE:</strong> The web version of the game is still a work in
+        progress and not fully complete/polished. Please see the app showcased
+        in our GovHack video as the fully designed submission as it is refined
+        and fully functional version of the game. Source code for it can be
+        found{" "}
+        <a
+          href="https://github.com/Onkiyo/GovHackAdventure"
+          alt="iOS app source code"
+        >
+          here
+        </a>
+        .
+      </p>
     </div>
   );
 };
