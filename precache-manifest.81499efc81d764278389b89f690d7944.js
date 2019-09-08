@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e70c0de09a1a9fae51e03ac5af49e8f6",
+    "revision": "4e5a2693e8ebda08de6ebce8591eba56",
     "url": "/govhack-adventure/index.html"
   },
   {
-    "revision": "fdd007945d400a21835b",
+    "revision": "d162b07b17dbf67b35d6",
     "url": "/govhack-adventure/static/css/main.c8702336.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/govhack-adventure/static/js/2.b77c0aac.chunk.js"
   },
   {
-    "revision": "fdd007945d400a21835b",
-    "url": "/govhack-adventure/static/js/main.5d80a2ac.chunk.js"
+    "revision": "d162b07b17dbf67b35d6",
+    "url": "/govhack-adventure/static/js/main.5c7f76a1.chunk.js"
   },
   {
     "revision": "74db53fd219b20021532",

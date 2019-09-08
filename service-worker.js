@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/govhack-adventure/precache-manifest.cf7be5a12e7d87c762814c7525520ede.js"
+  "/govhack-adventure/precache-manifest.81499efc81d764278389b89f690d7944.js"
 );
 
 self.addEventListener('message', (event) => {
